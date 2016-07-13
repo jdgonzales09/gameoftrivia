@@ -21,7 +21,7 @@
  */
 var questions = [
     {
-        "What is the first name of Ned Stark's illegitamate son?": [
+        "What is the first name of Ned Starks illegitamate son?": [
             "John",
             "Ricken",
             "Robb",
@@ -46,7 +46,7 @@ var questions = [
         ]
     },
     {
-        "What is the name of Caitlyn Stark's father?": [
+        "What is the name of Caitlyn Starks father?": [
             "Lord Hoster",
             "Lord Air-in",
             "Lord Tie Win",
@@ -54,7 +54,7 @@ var questions = [
         ]
     },
     {
-        "What was the name of Arya’s dire wolf?": [
+        "What was the name of Areyas dire wolf?": [
             "Nymeria",
             "Grey Wind",
             "Summer",
@@ -72,7 +72,7 @@ var questions = [
     {
         "Who said, A very small man can cast a very large shadow?": [
             "Lord Varies",
-            "Peter bale-ish",
+            "Peter Balish",
             "Tyrion Lannister",
             "Ned Stark"
         ]
@@ -118,7 +118,7 @@ var questions = [
         ]
     },
     {
-        "What is the name of John Snow’s wolf?": [
+        "What is the name of John Snows wolf?": [
             "Ghost",
             "Gray wind",
             "Heart Eater",
@@ -142,7 +142,7 @@ var questions = [
         ]
     },
     {
-        "What creature does Brienne fight in a pit?": [
+        "What animal does Brienne fight in a pit?": [
             "Bear",
             "Lion",
             "Dragon",
@@ -158,7 +158,7 @@ var questions = [
         ]
     },
     {
-        "Who push Bran Stark out of the window?": [
+        "Who pushed Bran Stark out of the window?": [
           "Jamie Lannister",
           "Tyrion Lannister",
           "Theon Greyjoy",
@@ -166,7 +166,7 @@ var questions = [
         ]
     },
     {
-        "What is the name of Sansa Stark's dire wolf": [
+        "What is the name of Sansa Starks dire wolf": [
           "Lady",
           "Ghost",
           "Theo",
@@ -194,9 +194,9 @@ exports.handler = function (event, context) {
          * prevent someone else from configuring a skill that sends requests to this function.
          */
 
-//     if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.05aecccb3-1461-48fb-a008-822ddrt6b516") {
-//         context.fail("Invalid Application ID");
-//      }
+    if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.548eb573-4f85-4732-88d0-160ea2b085ca") {
+         context.fail("Invalid Application ID");
+     }
 
         if (event.session.new) {
             onSessionStarted({requestId: event.request.requestId}, event.session);
